@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Subjects Hub - Python.org Inspired</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="top-wrapper">
+        <header>
+            <div class="container">
+                <a href="index.html" class="site-logo">Sai's Coding Hub</a>
+                <nav>
+                    <ul>
+                        <li><a href="subjects/python/index.html">Python</a></li>
+                        <li><a href="subjects/javascript/index.html">JavaScript</a></li>
+                        <li><a href="subjects/html_css/index.html">HTML/CSS</a></li>
+                        <li><a href="#">Java</a></li> 
+                        <li><a href="#">C++</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search-container">
+                    <input type="text" id="siteSearch" onkeyup="filterList('siteSearch', 'subjectItems', 'subject-box')" placeholder="Search site...">
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div id="content-wrapper">
+        <div class="container">
+            <main>
+                <section class="hero">
+                    <h1>Welcome to the Sai's Coding Hub!</h1>
+                    <p>portal to explore various programming languages and topics.</p>
+                </section>
+
+                <section class="subject-list">
+                    <h2>Dive into Our Subjects</h2>
+                    
+                    <div class="subject-grid" id="subjectItems"> 
+                        
+                        <div class="subject-box"><a href="subjects/python/index.html">Python Programming</a></div>
+                        <div class="subject-box"><a href="subjects/javascript/index.html">JavaScript Essentials</a></div>
+                        <div class="subject-box"><a href="subjects/html_css/index.html">HTML & CSS Fundamentals</a></div>
+                        <div class="subject-box"><a href="#">Java Development</a></div>
+                        <div class="subject-box"><a href="#">C++ Basics</a></div>
+                        <div class="subject-box"><a href="#">Data Science</a></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <div id="push"></div>
+    <footer id="footer">
+        <div class="container">
+            <p> @Sai's Coding Hub.</p>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>
