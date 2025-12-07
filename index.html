@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sai's Coding Hub </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" type="img" href="img/favicon.jpg">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" aria-label="Main sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-logo">SC</div>
+            <div class="brand-title">Sai's Coding Hub</div>
+        </div>
+
+        <!-- Python -->
+        <div class="sidebar-section">
+            <div class="section-head">
+                <button class="section-toggle">Python</button>
+            </div>
+            <div class="sidebar-list">
+                <a class="sidebar-item" href="subjects/python/index.html"><span class="icon-slot">🐍</span> Python Home</a>
+                <a class="sidebar-item" href="subjects/python/variables.html"><span class="icon-slot">V</span> Variables</a>
+                <a class="sidebar-item" href="subjects/python/loops.html"><span class="icon-slot">L</span> Loops</a>
+                <a class="sidebar-item" href="subjects/python/functions.html"><span class="icon-slot">F</span> Functions</a>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="sidebar-section">
+            <div class="section-head">
+                <button class="section-toggle">JavaScript</button>
+            </div>
+            <div class="sidebar-list">
+                <a class="sidebar-item" href="#"><span class="icon-slot">JS</span> Coming Soon</a>
+            </div>
+        </div>
+
+        <!-- HTML / CSS -->
+        <div class="sidebar-section">
+            <div class="section-head"><button class="section-toggle">HTML / CSS</button></div>
+            <div class="sidebar-list">
+                <a class="sidebar-item" href="#"><span class="icon-slot">HT</span> Coming Soon</a>
+            </div>
+        </div>
+
+        <!-- Other -->
+        <div class="sidebar-section">
+            <div class="section-head"><button class="section-toggle">Other Languages</button></div>
+            <div class="sidebar-list">
+                <a class="sidebar-item" href="#"><span class="icon-slot">JV</span> Java</a>
+                <a class="sidebar-item" href="#"><span class="icon-slot">C++</span> C++</a>
+                <a class="sidebar-item" href="#"><span class="icon-slot">C#</span> C#</a>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- overlay for mobile -->
+    <div id="overlay"></div>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+
+        <!-- HEADER -->
+        <div id="top-wrapper">
+            <div class="header-inner">
+                <div class="header-left">
+                    <button id="sidebarToggle" class="hamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                         <span></span>
+                    </button>
+
+                    <a href="index.html" class="site-logo">Sai's Coding Hub</a>
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-search-container">
+                        <input id="siteSearch" onkeyup="filterList('siteSearch','subjectItems','subject-box')" type="text" placeholder="Search Subjects...">
+                    </div>
+
+                    <label class="theme-toggle">
+                        <input type="checkbox" id="themeSwitch">
+                        <span class="toggle-slider">
+                        <span class="toggle-icon sun">☀️</span>
+                        <span class="toggle-icon moon">🌙</span>
+                        </span>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE CONTENT -->
+        <div id="content-wrapper" class="container">
+            <main>
+                <section class="hero">
+                    <h1>Welcome to Sai's Coding Hub</h1>
+                    <p>Portal to explore programming languages.</p>
+                </section>
+
+                <section class="subject-list">
+                    <h2>Dive into Our Subjects</h2>
+                    <div class="subject-grid" id="subjectItems">
+                        <div class="subject-box" style="--i:0"><a href="subjects/python/index.html">Python Programming</a></div>
+                        <div class="subject-box" style="--i:1"><a href="subjects/javascript/index.html">JavaScript Essentials</a></div>
+                        <div class="subject-box" style="--i:2"><a href="subjects/html_css/index.html">HTML & CSS Fundamentals</a></div>
+                        <div class="subject-box" style="--i:3"><a href="#">Java Development</a></div>
+                        <div class="subject-box" style="--i:4"><a href="#">C++ Basics</a></div>
+                        <div class="subject-box" style="--i:5"><a href="#">Data Science</a></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer id="footer">
+            <div class="container"><p>@Sai's Coding Hub.</p></div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
