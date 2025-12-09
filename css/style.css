@@ -433,7 +433,7 @@ body.sidebar-open-mobile #sidebarToggle {
   font-family:'Times New Roman', Times, serif;
   overflow: hidden;
   margin: 0;
-  background: linear-gradient(-45deg, #FF3CAC, #784BA0, #2B86C5, #23d5ab, #06ee8d #cf0eb6);
+  background: linear-gradient(-45deg, #FF3CAC, #784BA0, #2B86C5, #23d5ab, #06ee8d, #cf0eb6);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   color: white;
